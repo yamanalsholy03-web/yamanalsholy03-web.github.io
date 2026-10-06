@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yaman Alsholy | Fitness</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;background:#050505;color:#fff;overflow-x:hidden}
+body:before{content:"";position:fixed;width:600px;height:600px;background:#ff1e1e;filter:blur(180px);opacity:.12;top:-250px;right:-200px;z-index:-1}
+nav{position:fixed;top:0;width:100%;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;background:rgba(5,5,5,.75);backdrop-filter:blur(15px);border-bottom:1px solid rgba(255,255,255,.08);z-index:1000}
+.logo{font-size:22px;font-weight:900;letter-spacing:2px}.logo span,h1 span,.section-title span,.sponsor-name span{color:#ff2929}
+nav a{color:#aaa;text-decoration:none;margin-left:28px;font-size:14px;font-weight:600;transition:.3s}nav a:hover{color:#ff2b2b}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 8% 70px}.hero-content{max-width:850px}
+.tag{color:#ff3333;font-weight:800;letter-spacing:4px;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(55px,10vw,120px);line-height:.9;font-weight:900;letter-spacing:-5px}
+.hero p{margin-top:30px;max-width:600px;color:#999;line-height:1.7;font-size:17px}
+.buttons{margin-top:35px}.btn{display:inline-block;padding:15px 25px;margin-right:10px;border-radius:8px;text-decoration:none;font-weight:800;transition:.3s}
+.btn-main{background:#ff2424;color:white}.btn-main:hover{transform:translateY(-3px);box-shadow:0 10px 35px rgba(255,30,30,.35)}
+.btn-dark{border:1px solid #333;color:white}.btn-dark:hover{border-color:#ff2424}
+section{padding:100px 8%}.section-title{font-size:42px;font-weight:900;margin-bottom:12px}.section-subtitle{color:#777;margin-bottom:45px}
+.split-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.day-card{background:linear-gradient(145deg,#111,#090909);border:1px solid #222;border-radius:16px;padding:28px;position:relative;overflow:hidden;transition:.35s}
+.day-card:hover{transform:translateY(-8px);border-color:#ff2929}
+.day{color:#ff2929;font-size:13px;font-weight:900;letter-spacing:2px}.workout{font-size:23px;font-weight:800;margin-top:12px}.rest{color:#666}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:40px}
+.stat{padding:30px;background:#0c0c0c;border:1px solid #222;border-radius:14px;text-align:center}.stat h3{font-size:30px;color:#ff2929}.stat p{color:#777;margin-top:7px}
+.sponsor-container{display:flex;justify-content:center}.sponsor-card{width:100%;max-width:700px;padding:50px;border-radius:20px;text-align:center;background:linear-gradient(145deg,#121212,#080808);border:1px solid #292929;transition:.4s}
+.sponsor-card:hover{transform:scale(1.02);border-color:#ff2929;box-shadow:0 20px 70px rgba(255,0,0,.12)}
+.sponsor-label{color:#777;font-size:12px;letter-spacing:3px;font-weight:800}.sponsor-name{font-size:48px;font-weight:900;margin:20px 0}
+footer{border-top:1px solid #1d1d1d;padding:35px 8%;display:flex;justify-content:space-between;color:#555;font-size:13px}footer strong{color:#aaa}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s ease}.reveal.active{opacity:1;transform:translateY(0)}
+@media(max-width:700px){nav{padding:18px 5%}nav div:last-child{display:none}section{padding:75px 6%}h1{letter-spacing:-3px}.section-title{font-size:34px}.sponsor-name{font-size:34px}footer{flex-direction:column;gap:10px}}
+</style>
+</head>
+<body>
+<nav><div class="logo">YAMAN<span>.</span></div><div><a href="#home">HOME</a><a href="#split">WORKOUT</a><a href="#sponsors">SPONSOR</a></div></nav>
+
+<section class="hero" id="home">
+<div class="hero-content reveal">
+<div class="tag">FITNESS • DISCIPLINE • PROGRESS</div>
+<h1>YAMAN<br><span>ALSHOLY</span></h1>
+<p>Welcome to my fitness journey. Training hard, staying consistent and working every day to become stronger than yesterday.</p>
+<div class="buttons"><a href="#split" class="btn btn-main">VIEW MY SPLIT</a><a href="#sponsors" class="btn btn-dark">MY SPONSOR</a></div>
+</div>
+</section>
+
+<section id="split">
+<div class="reveal"><div class="section-title">MY <span>WORKOUT</span></div><div class="section-subtitle">The weekly training split I follow.</div></div>
+<div class="split-grid">
+<div class="day-card reveal"><div class="day">MONDAY</div><div class="workout">Chest • Biceps • Shoulders</div></div>
+<div class="day-card reveal"><div class="day">TUESDAY</div><div class="workout">Back • Triceps</div></div>
+<div class="day-card reveal"><div class="day">WEDNESDAY</div><div class="workout">Legs • Abs • Cardio</div></div>
+<div class="day-card reveal"><div class="day">THURSDAY</div><div class="workout">Chest • Biceps • Shoulders</div></div>
+<div class="day-card reveal"><div class="day">FRIDAY</div><div class="workout">Back • Triceps</div></div>
+<div class="day-card reveal"><div class="day">SATURDAY</div><div class="workout rest">REST DAY</div></div>
+<div class="day-card reveal"><div class="day">SUNDAY</div><div class="workout rest">REST DAY</div></div>
+</div>
+<div class="stats">
+<div class="stat reveal"><h3>5</h3><p>Training Days</p></div>
+<div class="stat reveal"><h3>2</h3><p>Rest Days</p></div>
+<div class="stat reveal"><h3>100%</h3><p>Discipline</p></div>
+</div>
+</section>
+
+<section id="sponsors">
+<div class="reveal"><div class="section-title">MY <span>SPONSOR</span></div><div class="section-subtitle">Proud to work with brands that support the journey.</div></div>
+<div class="sponsor-container"><div class="sponsor-card reveal">
+<div class="sponsor-label">OFFICIAL SPONSOR</div>
+<div class="sponsor-name">VENGEANCE<span>.</span>PROJECT</div>
+<p style="color:#777;line-height:1.7">Proudly sponsored by Vengeance.Project. Built around discipline, ambition and the pursuit of progress.</p>
+</div></div>
+</section>
+
+<footer><div>© 2026 <strong>Yaman Alsholy</strong></div><div>TRAIN HARD • STAY CONSISTENT • GET STRONGER</div></footer>
+
+<script>
+const reveals=document.querySelectorAll(".reveal");
+function revealOnScroll(){reveals.forEach(e=>{if(e.getBoundingClientRect().top<innerHeight-80)e.classList.add("active")})}
+addEventListener("scroll",revealOnScroll);revealOnScroll();
+</script>
+</body>
+</html>
